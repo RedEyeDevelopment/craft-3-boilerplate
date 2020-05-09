@@ -24,7 +24,8 @@
     "nystudio107/craft-emptycoalesce": "1.0.6",
     "sebastianlenz/linkfield": "1.0.21",
     "vlucas/phpdotenv": "^3.4.0",
-    "yiisoft/yii2-redis": "^2.0"
+    "yiisoft/yii2-redis": "^2.0",
+    "redeyedev/craft-3-scaffolding":"dev-master@dev"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
