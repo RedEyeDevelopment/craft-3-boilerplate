@@ -1,0 +1,33 @@
+dateModified: 1588995852
+email:
+  fromEmail: greg@redeyedev.io
+  fromName: Redeye
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  9cfb8962-9746-42f2-b251-dffb4ebc1bf9:
+    name: Common
+siteGroups:
+  a4bcca11-1e30-4d97-8b08-f29cef7a4589:
+    name: Redeye
+sites:
+  a7bcdeb8-4fa6-4a92-9e31-f56bda8fe073:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: Redeye
+    primary: true
+    siteGroup: a4bcca11-1e30-4d97-8b08-f29cef7a4589
+    sortOrder: 1
+system:
+  edition: pro
+  live: true
+  name: Redeye
+  schemaVersion: 3.4.10
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
