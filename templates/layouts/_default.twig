@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ craft.app.language |slice(0,2) }}">
+  <head>
+    {% include 'partials/_initialMeta' %}
+    {% include 'partials/_styles' %}
+    {% include 'partials/_favicons' %}
+    {% include 'partials/_fonts' %}
+  </head>
+
+  <body class="{{ entry.type|default('default') ??? 'not-found' }} {{ currentSite.handle }}">
+    {% include 'components/_nav' %}
+
+    <main id="main">
+      {% block content %}{% endblock %}
+    </main>
+
+    {% include 'components/_footer' %}
+
+    {% include 'partials/_scripts' %}
+    {% include 'partials/_redeye' %}
+  </body>
+</html>

@@ -1,0 +1,96 @@
+{
+  "name": "craft-3-boilerplate",
+  "version": "1.0.0",
+  "description": "Craft CMS 3.4 Scaffolding",
+  "main": "webpack.config.js",
+  "keywords": [
+    "redeye",
+    "craft",
+    "boilerplate"
+  ],
+  "scripts": {
+    "build": "webpack --mode production",
+    "simple": "webpack --watch --mode development",
+    "dev": "webpack-dashboard -- webpack --watch --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/hammes/craft.git"
+  },
+  "author": "Greg Hayes <greg@redeyedev.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedEyeDevelopment/craft-3-boilerplate/issues"
+  },
+  "homepage": "https://github.com/RedEyeDevelopment/craft-3-boilerplate#readme",
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR"
+    ],
+    "legacyBrowsers": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR"
+    ],
+    "modernBrowsers": [
+      "last 2 Chrome versions",
+      "not Chrome < 60",
+      "last 2 Safari versions",
+      "not Safari < 10.1",
+      "last 2 iOS versions",
+      "not iOS < 10.3",
+      "last 2 Firefox versions",
+      "not Firefox < 54",
+      "last 2 Edge versions",
+      "not Edge < 15"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-proposal-json-strings": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-syntax-import-meta": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "acorn": "^7.1.1",
+    "ajv-keywords": "^3.4.1",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "compression-webpack-plugin": "^3.1.0",
+    "css-loader": "^3.5.3",
+    "dotenv-webpack": "^1.7.0",
+    "exports-loader": "^0.7.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "fs": "0.0.2",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^4.3.0",
+    "mime-types": "^2.1.27",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "sharp": "^0.25.2",
+    "trash": "^6.1.1",
+    "uglify-js": "^3.9.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.7.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dashboard": "^3.2.0",
+    "webpack-livereload-plugin": "^2.3.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "console-badge": "^1.3.0",
+    "core-js": "^3.6.5",
+    "headroom.js": "^0.11.0",
+    "lazysizes": "^5.2.0",
+    "regenerator-runtime": "^0.13.5"
+  }
+}

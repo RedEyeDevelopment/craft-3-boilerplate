@@ -1,3 +1,12 @@
+# .gitignore file for Craft 3 CMS projects
+#
+# @author    RedEyeDevelopment
+# @copyright Copyright (c) 2020 Red Eye Development
+# @link      https://redeye.studio/
+# @package   RedEyeDevelopment/craft
+# @since     1.0.0
+# @license   MIT
+
 # CRAFT ENVIRONMENT
 .env
 

@@ -1,9 +1,12 @@
 # Craft CMS 3 - Red Eye - Boilerplate
 
+## Description
+Super opinionated Craft CMS boilerplate and build system for local web development on MacOS
+
 ## Installation
 ```
   composer install
-
+  npm run install
 ```
 
 ## References

@@ -1,0 +1,45 @@
+body {
+  -moz-font-feature-settings: 'kern';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  direction: ltr;
+  font-synthesis: none;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+
+  &.freeze {
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+img,
+figure,
+svg {
+  max-width: 100%;
+}
+
+section {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.bg-img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

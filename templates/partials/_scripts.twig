@@ -1,0 +1,7 @@
+<script src="https://unpkg.com/vue"></script>
+<script src="/main.js"></script>
+<script src="/style.js"></script>
+
+{% if getenv('ENVIRONMENT') == 'dev' %}
+  <script src="http://localhost:35729/livereload.js"></script>
+{% endif %}

@@ -1,0 +1,117 @@
+body,
+html {
+  -webkit-font-smoothing: antialiased;
+  background-color: $color-white;
+  font-family: $font-default;
+  font-size: 10px;
+}
+
+
+a {
+  -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  -webkit-font-smoothing: antialiased;
+  color: $color-black;
+  font-weight: normal;
+  width: 100%;
+}
+
+h1,
+.h1 {
+  color: $color-black;
+  font-family: $font-default;
+  font-size: 5.5rem;
+  font-weight: $font-medium;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 1rem;
+  }
+}
+
+h2,
+.h2 {
+  color: $color-black;
+  font-family: $font-default;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 1.1rem;
+}
+
+h3,
+.h3 {
+  color: $color-black;
+  font-family: $font-default;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: $font-demi;
+  line-height: 150%;
+  margin-bottom: 1.1rem;
+}
+
+h4,
+.h4 {
+  color: $color-black;
+  font-family: $font-default;
+  font-size: 2.4rem;
+  font-weight: $font-demi;
+  line-height: 3.1rem;
+}
+
+h5,
+.h5 {
+  font-family: $font-default;
+  font-weight: $font-light;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+}
+
+p,
+.p,
+a,
+li {
+  color: $color-black;
+  font-family: $font-default;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 160%;
+  margin-bottom: 2.2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+strong {
+  font-weight: $font-demi;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  a {
+    font-weight: $font-demi;
+  }
+}
+
+b {
+  font-weight: $font-demi;
+}

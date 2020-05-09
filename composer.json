@@ -1,6 +1,28 @@
 {
+  "name": "craftcms/craft",
+  "description": "Red Eye Development Craft CMS 3.4 Scaffolding",
+  "version": "1.0.1",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "project"
+  ],
+  "license": "Unlicense",
+  "homepage": "https://redeye.studio",
+  "type": "project",
+  "support": {
+    "email": "support@craftcms.com",
+    "issues": "https://github.com/craftcms/cms/issues",
+    "forum": "https://craftcms.stackexchange.com/",
+    "source": "https://github.com/craftcms/cms",
+    "docs": "https://craftcms.com/docs",
+    "rss": "https://craftcms.com/changelog.rss"
+  },
   "require": {
     "craftcms/cms": "^3.4.0",
+    "nystudio107/craft-emptycoalesce": "1.0.6",
+    "sebastianlenz/linkfield": "1.0.21",
     "vlucas/phpdotenv": "^3.4.0",
     "yiisoft/yii2-redis": "^2.0"
   },
@@ -20,8 +42,13 @@
     }
   },
   "scripts": {
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    "post-create-project-cmd": [
+      "@php -r \"copy('./cms/example.env', './cms/.env');\"",
+      "@php -r \"copy('./scripts/example.env.sh', './scripts/.env.sh');\"",
+      "@php -r \"unlink('composer.json');\"",
+      "@php -r \"unlink('composer.lock');\"",
+      "@php -r \"unlink('LICENSE.md');\"",
+      "@php -r \"unlink('README.md');\""
     ]
   }
 }

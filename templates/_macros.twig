@@ -1,0 +1,8 @@
+{% macro img(image, class) %}
+  {% set optimizedImages = image.optimizedImage ??? image.optimizedprofile %}
+  <img src="{{ optimizedImages.src() }}"
+    srcset="{{ optimizedImages.srcset() }}"
+    sizes="100vw"
+    class="lazyload{% if class %} {{ class }}{% endif %}"
+    alt="{{ image }}" />
+{% endmacro %}
